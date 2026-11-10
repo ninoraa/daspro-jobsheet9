@@ -6,7 +6,13 @@ public class ArrayRataNilai25 {
         Scanner input = new Scanner(System.in);
 
         
-        int[] nilaiMhs = new int[10];
+       System.out.print("Jumlah mahasiswa: ");
+        int n = input.nextInt();
+            if (n <= 0) {
+                System.out.println("Jumlah harus lebih dari 0.");
+                return;
+            }
+        int[] nilaiMhs = new int[n];
         int total = 0;
         double rata2;
 
