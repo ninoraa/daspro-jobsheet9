@@ -11,10 +11,10 @@ public class ArrayNilai25 {
             nilaiAkhir[i] = input.nextInt();
         }
 
-        for (int i = 0; i < nilaiAkhir.length; i++) {
-            if (nilaiAkhir[i] > 70) {
-            System.out.println("Mahasiswa ke-" + (i + 1) + "  : " + nilaiAkhir[i] + "(LULUS)");
-        }
+        int no = 1;
+        for (int n : nilaiAkhir) {
+            String status = (n > 70) ? "LULUS" : "TIDAK LULUS";
+            System.out.println("Mahasiswa ke-" + no + ": " + n + " (" + status + ")"); no++;
         }
 
 }
